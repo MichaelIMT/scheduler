@@ -1,0 +1,10 @@
+C:\Users\misha\source\repos\scheduler\scheduler\bin\Debug\scheduler.exe.config
+C:\Users\misha\source\repos\scheduler\scheduler\bin\Debug\scheduler.exe
+C:\Users\misha\source\repos\scheduler\scheduler\bin\Debug\scheduler.pdb
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.csprojResolveAssemblyReference.cache
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.Scheduler.resources
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.Properties.Resources.resources
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.csproj.GenerateResource.Cache
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.csproj.CoreCompileInputs.cache
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.exe
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.pdb
