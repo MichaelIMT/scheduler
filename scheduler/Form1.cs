@@ -55,8 +55,8 @@ namespace scheduler
 
             this.tabControl1.Width = width;
                      
-
             var controls = GetAll(this.tabControl1, typeof(TabControl));
+
             foreach (Control c in controls)
             {
                 c.Width = width;
