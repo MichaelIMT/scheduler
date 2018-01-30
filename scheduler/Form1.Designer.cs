@@ -1,4 +1,4 @@
-﻿namespace scheduler
+namespace scheduler
 {
     partial class Scheduler
     {
@@ -32,7 +32,7 @@
             this.tabLists = new System.Windows.Forms.TabPage();
             this.ControlLists = new System.Windows.Forms.TabControl();
             this.tabCathedra = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kafedrasGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -40,9 +40,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.kafedraAddbutton1 = new System.Windows.Forms.Button();
             this.tabSpeciality = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.specialtyGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,7 +52,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.tabGroups = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.groupsGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.tabLessons = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.subjectsGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,7 +76,7 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.tabClasses = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.audienceGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,7 +88,7 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.tabTeachers = new System.Windows.Forms.TabPage();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.lectorsGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,7 +103,7 @@
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.tabTypes = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.subjectTypesGridView7 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -225,25 +225,25 @@
             this.tabLists.SuspendLayout();
             this.ControlLists.SuspendLayout();
             this.tabCathedra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kafedrasGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabSpeciality.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.specialtyGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabGroups.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupsGridView3)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tabLessons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectsGridView4)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tabClasses.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audienceGridView5)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.tabTeachers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lectorsGridView6)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.tabTypes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTypesGridView7)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.tabCapacity.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -313,10 +313,11 @@
             this.ControlLists.SelectedIndex = 0;
             this.ControlLists.Size = new System.Drawing.Size(806, 377);
             this.ControlLists.TabIndex = 0;
+            this.ControlLists.SelectedIndexChanged += new System.EventHandler(this.ControlLists_SelectedIndexChanged);
             // 
             // tabCathedra
             // 
-            this.tabCathedra.Controls.Add(this.dataGridView1);
+            this.tabCathedra.Controls.Add(this.kafedrasGridView1);
             this.tabCathedra.Controls.Add(this.groupBox1);
             this.tabCathedra.Location = new System.Drawing.Point(4, 34);
             this.tabCathedra.Name = "tabCathedra";
@@ -326,17 +327,18 @@
             this.tabCathedra.Text = "Кафедри";
             this.tabCathedra.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // kafedrasGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kafedrasGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.kafedrasGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kafedrasGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView1.TabIndex = 1;
+            this.kafedrasGridView1.Location = new System.Drawing.Point(0, 51);
+            this.kafedrasGridView1.Name = "kafedrasGridView1";
+            this.kafedrasGridView1.Size = new System.Drawing.Size(784, 288);
+            this.kafedrasGridView1.TabIndex = 1;
+            this.kafedrasGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.kafedrasGridView1_CellEndEdit);
             // 
             // Column1
             // 
@@ -354,7 +356,7 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.kafedraAddbutton1);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(798, 51);
@@ -398,18 +400,19 @@
             this.button2.Text = "Вставити";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // kafedraAddbutton1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Додати";
-            this.button1.UseVisualStyleBackColor = true;
+            this.kafedraAddbutton1.Location = new System.Drawing.Point(3, 6);
+            this.kafedraAddbutton1.Name = "kafedraAddbutton1";
+            this.kafedraAddbutton1.Size = new System.Drawing.Size(103, 39);
+            this.kafedraAddbutton1.TabIndex = 0;
+            this.kafedraAddbutton1.Text = "Додати";
+            this.kafedraAddbutton1.UseVisualStyleBackColor = true;
+            this.kafedraAddbutton1.Click += new System.EventHandler(this.kafedraAddbutton1_Click);
             // 
             // tabSpeciality
             // 
-            this.tabSpeciality.Controls.Add(this.dataGridView2);
+            this.tabSpeciality.Controls.Add(this.specialtyGridView2);
             this.tabSpeciality.Controls.Add(this.groupBox2);
             this.tabSpeciality.Location = new System.Drawing.Point(4, 34);
             this.tabSpeciality.Name = "tabSpeciality";
@@ -419,17 +422,17 @@
             this.tabSpeciality.Text = "Спеціальності";
             this.tabSpeciality.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // specialtyGridView2
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.specialtyGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.specialtyGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.specialtyGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(-4, 48);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView2.TabIndex = 2;
+            this.specialtyGridView2.Location = new System.Drawing.Point(-4, 48);
+            this.specialtyGridView2.Name = "specialtyGridView2";
+            this.specialtyGridView2.Size = new System.Drawing.Size(784, 288);
+            this.specialtyGridView2.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -502,7 +505,7 @@
             // 
             // tabGroups
             // 
-            this.tabGroups.Controls.Add(this.dataGridView3);
+            this.tabGroups.Controls.Add(this.groupsGridView3);
             this.tabGroups.Controls.Add(this.groupBox3);
             this.tabGroups.Location = new System.Drawing.Point(4, 34);
             this.tabGroups.Name = "tabGroups";
@@ -512,19 +515,19 @@
             this.tabGroups.Text = "Групи";
             this.tabGroups.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // groupsGridView3
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.groupsGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.groupsGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.groupsGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.Column3,
             this.Column4});
-            this.dataGridView3.Location = new System.Drawing.Point(-4, 51);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView3.TabIndex = 2;
+            this.groupsGridView3.Location = new System.Drawing.Point(-4, 51);
+            this.groupsGridView3.Name = "groupsGridView3";
+            this.groupsGridView3.Size = new System.Drawing.Size(784, 288);
+            this.groupsGridView3.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -617,7 +620,7 @@
             // 
             // tabLessons
             // 
-            this.tabLessons.Controls.Add(this.dataGridView4);
+            this.tabLessons.Controls.Add(this.subjectsGridView4);
             this.tabLessons.Controls.Add(this.groupBox4);
             this.tabLessons.Location = new System.Drawing.Point(4, 34);
             this.tabLessons.Name = "tabLessons";
@@ -627,18 +630,18 @@
             this.tabLessons.Text = "Дисципліни";
             this.tabLessons.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
+            // subjectsGridView4
             // 
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.subjectsGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.subjectsGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subjectsGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.Column5});
-            this.dataGridView4.Location = new System.Drawing.Point(-4, 45);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView4.TabIndex = 2;
+            this.subjectsGridView4.Location = new System.Drawing.Point(-4, 45);
+            this.subjectsGridView4.Name = "subjectsGridView4";
+            this.subjectsGridView4.Size = new System.Drawing.Size(784, 288);
+            this.subjectsGridView4.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -716,7 +719,7 @@
             // 
             // tabClasses
             // 
-            this.tabClasses.Controls.Add(this.dataGridView5);
+            this.tabClasses.Controls.Add(this.audienceGridView5);
             this.tabClasses.Controls.Add(this.groupBox5);
             this.tabClasses.Location = new System.Drawing.Point(4, 34);
             this.tabClasses.Name = "tabClasses";
@@ -726,19 +729,19 @@
             this.tabClasses.Text = "Аудиторії";
             this.tabClasses.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // audienceGridView5
             // 
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.audienceGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.audienceGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.audienceGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.Column6,
             this.Column7});
-            this.dataGridView5.Location = new System.Drawing.Point(-4, 51);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView5.TabIndex = 2;
+            this.audienceGridView5.Location = new System.Drawing.Point(-4, 51);
+            this.audienceGridView5.Name = "audienceGridView5";
+            this.audienceGridView5.Size = new System.Drawing.Size(784, 288);
+            this.audienceGridView5.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -821,7 +824,7 @@
             // 
             // tabTeachers
             // 
-            this.tabTeachers.Controls.Add(this.dataGridView6);
+            this.tabTeachers.Controls.Add(this.lectorsGridView6);
             this.tabTeachers.Controls.Add(this.groupBox6);
             this.tabTeachers.Location = new System.Drawing.Point(4, 34);
             this.tabTeachers.Name = "tabTeachers";
@@ -831,21 +834,21 @@
             this.tabTeachers.Text = "Викладачі";
             this.tabTeachers.UseVisualStyleBackColor = true;
             // 
-            // dataGridView6
+            // lectorsGridView6
             // 
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lectorsGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.lectorsGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lectorsGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.Column8,
             this.Column9,
             this.Column10,
             this.Column11});
-            this.dataGridView6.Location = new System.Drawing.Point(0, 51);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView6.TabIndex = 2;
+            this.lectorsGridView6.Location = new System.Drawing.Point(0, 51);
+            this.lectorsGridView6.Name = "lectorsGridView6";
+            this.lectorsGridView6.Size = new System.Drawing.Size(784, 288);
+            this.lectorsGridView6.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -948,7 +951,7 @@
             // 
             // tabTypes
             // 
-            this.tabTypes.Controls.Add(this.dataGridView7);
+            this.tabTypes.Controls.Add(this.subjectTypesGridView7);
             this.tabTypes.Controls.Add(this.groupBox7);
             this.tabTypes.Location = new System.Drawing.Point(4, 34);
             this.tabTypes.Name = "tabTypes";
@@ -958,17 +961,17 @@
             this.tabTypes.Text = "Види занять";
             this.tabTypes.UseVisualStyleBackColor = true;
             // 
-            // dataGridView7
+            // subjectTypesGridView7
             // 
-            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.subjectTypesGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.subjectTypesGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subjectTypesGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
-            this.dataGridView7.Location = new System.Drawing.Point(-4, 48);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView7.TabIndex = 2;
+            this.subjectTypesGridView7.Location = new System.Drawing.Point(-4, 48);
+            this.subjectTypesGridView7.Name = "subjectTypesGridView7";
+            this.subjectTypesGridView7.Size = new System.Drawing.Size(784, 288);
+            this.subjectTypesGridView7.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -1003,7 +1006,6 @@
             this.button38.TabIndex = 5;
             this.button38.Text = "Порядок";
             this.button38.UseVisualStyleBackColor = true;
-            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // button31
             // 
@@ -1965,25 +1967,25 @@
             this.tabLists.ResumeLayout(false);
             this.ControlLists.ResumeLayout(false);
             this.tabCathedra.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kafedrasGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.tabSpeciality.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.specialtyGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.tabGroups.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupsGridView3)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.tabLessons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectsGridView4)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.tabClasses.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audienceGridView5)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.tabTeachers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lectorsGridView6)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.tabTypes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTypesGridView7)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.tabCapacity.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
@@ -2032,7 +2034,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button kafedraAddbutton1;
         private System.Windows.Forms.TabPage tabSpeciality;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button6;
@@ -2112,34 +2114,34 @@
         private System.Windows.Forms.ToolStripMenuItem підтримкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView kafedrasGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView specialtyGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView groupsGridView3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView subjectsGridView4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView audienceGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView lectorsGridView6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView subjectTypesGridView7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridView dataGridView8;

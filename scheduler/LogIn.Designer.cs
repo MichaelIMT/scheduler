@@ -47,6 +47,7 @@
             this.buttonLogIn.TabIndex = 9;
             this.buttonLogIn.Text = "Вхід";
             this.buttonLogIn.UseVisualStyleBackColor = true;
+            this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
             // groupBox1
             // 
@@ -88,6 +89,7 @@
             this.inputPassword.Name = "inputPassword";
             this.inputPassword.Size = new System.Drawing.Size(147, 22);
             this.inputPassword.TabIndex = 1;
+            this.inputPassword.Text = "23";
             // 
             // inputName
             // 
@@ -95,6 +97,7 @@
             this.inputName.Name = "inputName";
             this.inputName.Size = new System.Drawing.Size(147, 22);
             this.inputName.TabIndex = 0;
+            this.inputName.Text = "Mykhailo";
             // 
             // label2
             // 
