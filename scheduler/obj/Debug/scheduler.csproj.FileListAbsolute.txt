@@ -8,3 +8,4 @@ C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.csproj.Gener
 C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.csproj.CoreCompileInputs.cache
 C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.exe
 C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.pdb
+C:\Users\misha\source\repos\scheduler\scheduler\obj\Debug\scheduler.LogIn.resources

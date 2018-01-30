@@ -116,6 +116,11 @@
             this.tabCapacity = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -127,6 +132,8 @@
             this.button43 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -149,6 +156,10 @@
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button54 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -158,6 +169,8 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.button49 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -169,6 +182,16 @@
             this.tabScheduler = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dataGridView13 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -198,29 +221,6 @@
             this.підтримкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проПрограмуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabLists.SuspendLayout();
             this.ControlLists.SuspendLayout();
@@ -248,6 +248,7 @@
             this.tabCapacity.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -266,10 +267,9 @@
             this.tabScheduler.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1089,6 +1089,52 @@
             this.tabPage1.Text = "Навчальний план";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.label3);
+            this.groupBox14.Controls.Add(this.domainUpDown2);
+            this.groupBox14.Controls.Add(this.label2);
+            this.groupBox14.Controls.Add(this.domainUpDown1);
+            this.groupBox14.Location = new System.Drawing.Point(-8, 337);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(788, 46);
+            this.groupBox14.TabIndex = 4;
+            this.groupBox14.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(245, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Група";
+            // 
+            // domainUpDown2
+            // 
+            this.domainUpDown2.Location = new System.Drawing.Point(311, 13);
+            this.domainUpDown2.Name = "domainUpDown2";
+            this.domainUpDown2.Size = new System.Drawing.Size(120, 33);
+            this.domainUpDown2.TabIndex = 2;
+            this.domainUpDown2.Text = "0213м";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Спец.";
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Location = new System.Drawing.Point(80, 13);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.Size = new System.Drawing.Size(120, 33);
+            this.domainUpDown1.TabIndex = 0;
+            this.domainUpDown1.Text = "Держ.упр.";
+            // 
             // dataGridView8
             // 
             this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -1185,6 +1231,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Навантаження";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 355);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Група";
+            // 
+            // domainUpDown3
+            // 
+            this.domainUpDown3.Location = new System.Drawing.Point(72, 353);
+            this.domainUpDown3.Name = "domainUpDown3";
+            this.domainUpDown3.Size = new System.Drawing.Size(120, 33);
+            this.domainUpDown3.TabIndex = 4;
+            this.domainUpDown3.Text = "0213м";
             // 
             // dataGridView9
             // 
@@ -1331,7 +1394,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(831, 360);
+            this.tabPage3.Size = new System.Drawing.Size(831, 389);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Графіки";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1369,6 +1432,40 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Викладач";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(244, 355);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 25);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Викладач";
+            // 
+            // domainUpDown5
+            // 
+            this.domainUpDown5.Location = new System.Drawing.Point(344, 350);
+            this.domainUpDown5.Name = "domainUpDown5";
+            this.domainUpDown5.Size = new System.Drawing.Size(238, 33);
+            this.domainUpDown5.TabIndex = 7;
+            this.domainUpDown5.Text = "Волжанський О.П.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 355);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Кафедра";
+            // 
+            // domainUpDown4
+            // 
+            this.domainUpDown4.Location = new System.Drawing.Point(99, 353);
+            this.domainUpDown4.Name = "domainUpDown4";
+            this.domainUpDown4.Size = new System.Drawing.Size(120, 33);
+            this.domainUpDown4.TabIndex = 5;
+            this.domainUpDown4.Text = "каф. хімії";
             // 
             // dataGridView10
             // 
@@ -1441,6 +1538,23 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Кафедра";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 342);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 25);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Кафедра";
+            // 
+            // domainUpDown6
+            // 
+            this.domainUpDown6.Location = new System.Drawing.Point(99, 340);
+            this.domainUpDown6.Name = "domainUpDown6";
+            this.domainUpDown6.Size = new System.Drawing.Size(210, 33);
+            this.domainUpDown6.TabIndex = 6;
+            this.domainUpDown6.Text = "каф. хімії";
             // 
             // dataGridView11
             // 
@@ -1548,6 +1662,78 @@
             this.tabPage7.Text = "Групи";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(162, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 25);
+            this.label8.TabIndex = 5;
+            this.label8.Text = " Група 0701";
+            // 
+            // dataGridView13
+            // 
+            this.dataGridView13.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView13.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.Column28,
+            this.Column29});
+            this.dataGridView13.Location = new System.Drawing.Point(20, 288);
+            this.dataGridView13.Name = "dataGridView13";
+            this.dataGridView13.Size = new System.Drawing.Size(885, 288);
+            this.dataGridView13.TabIndex = 4;
+            this.dataGridView13.Resize += new System.EventHandler(this.Scheduler_Resize);
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "Група";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "Пар всього";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "Пар в тиждень";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.HeaderText = "Дисципліна";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.HeaderText = "Викладач";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // Column28
+            // 
+            this.Column28.HeaderText = "вид заняття";
+            this.Column28.Name = "Column28";
+            // 
+            // Column29
+            // 
+            this.Column29.HeaderText = "Аудиторія";
+            this.Column29.Name = "Column29";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(18, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = " Група 0123м";
+            // 
             // dataGridView12
             // 
             this.dataGridView12.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -1594,7 +1780,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(831, 371);
+            this.tabPage8.Size = new System.Drawing.Size(911, 602);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Викладачі";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1604,7 +1790,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 34);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(831, 371);
+            this.tabPage9.Size = new System.Drawing.Size(911, 602);
             this.tabPage9.TabIndex = 2;
             this.tabPage9.Text = "Аудиторії";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -1614,7 +1800,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 34);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(831, 371);
+            this.tabPage10.Size = new System.Drawing.Size(911, 602);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "ВУЗ";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1762,192 +1948,6 @@
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(18, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = " Група 0123м";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.label3);
-            this.groupBox14.Controls.Add(this.domainUpDown2);
-            this.groupBox14.Controls.Add(this.label2);
-            this.groupBox14.Controls.Add(this.domainUpDown1);
-            this.groupBox14.Location = new System.Drawing.Point(-8, 337);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(788, 46);
-            this.groupBox14.TabIndex = 4;
-            this.groupBox14.TabStop = false;
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(80, 13);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(120, 33);
-            this.domainUpDown1.TabIndex = 0;
-            this.domainUpDown1.Text = "Держ.упр.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Спец.";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(245, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Група";
-            // 
-            // domainUpDown2
-            // 
-            this.domainUpDown2.Location = new System.Drawing.Point(311, 13);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(120, 33);
-            this.domainUpDown2.TabIndex = 2;
-            this.domainUpDown2.Text = "0213м";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 355);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Група";
-            // 
-            // domainUpDown3
-            // 
-            this.domainUpDown3.Location = new System.Drawing.Point(72, 353);
-            this.domainUpDown3.Name = "domainUpDown3";
-            this.domainUpDown3.Size = new System.Drawing.Size(120, 33);
-            this.domainUpDown3.TabIndex = 4;
-            this.domainUpDown3.Text = "0213м";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 355);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Кафедра";
-            // 
-            // domainUpDown4
-            // 
-            this.domainUpDown4.Location = new System.Drawing.Point(99, 353);
-            this.domainUpDown4.Name = "domainUpDown4";
-            this.domainUpDown4.Size = new System.Drawing.Size(120, 33);
-            this.domainUpDown4.TabIndex = 5;
-            this.domainUpDown4.Text = "каф. хімії";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(244, 355);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 25);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Викладач";
-            // 
-            // domainUpDown5
-            // 
-            this.domainUpDown5.Location = new System.Drawing.Point(344, 350);
-            this.domainUpDown5.Name = "domainUpDown5";
-            this.domainUpDown5.Size = new System.Drawing.Size(238, 33);
-            this.domainUpDown5.TabIndex = 7;
-            this.domainUpDown5.Text = "Волжанський О.П.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 342);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 25);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Кафедра";
-            // 
-            // domainUpDown6
-            // 
-            this.domainUpDown6.Location = new System.Drawing.Point(99, 340);
-            this.domainUpDown6.Name = "domainUpDown6";
-            this.domainUpDown6.Size = new System.Drawing.Size(210, 33);
-            this.domainUpDown6.TabIndex = 6;
-            this.domainUpDown6.Text = "каф. хімії";
-            // 
-            // dataGridView13
-            // 
-            this.dataGridView13.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.Column28,
-            this.Column29});
-            this.dataGridView13.Location = new System.Drawing.Point(20, 288);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.Size = new System.Drawing.Size(885, 288);
-            this.dataGridView13.TabIndex = 4;
-            this.dataGridView13.Resize += new System.EventHandler(this.Scheduler_Resize);
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "Група";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "Пар всього";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "Пар в тиждень";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "Дисципліна";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.HeaderText = "Викладач";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // Column28
-            // 
-            this.Column28.HeaderText = "вид заняття";
-            this.Column28.Name = "Column28";
-            // 
-            // Column29
-            // 
-            this.Column29.HeaderText = "Аудиторія";
-            this.Column29.Name = "Column29";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(162, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 25);
-            this.label8.TabIndex = 5;
-            this.label8.Text = " Група 0701";
-            // 
             // Scheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -1959,7 +1959,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Scheduler";
-            this.Text = "Scheduler";
+            this.Text = "jy";
             this.Resize += new System.EventHandler(this.Scheduler_Resize);
             this.tabControl1.ResumeLayout(false);
             this.tabLists.ResumeLayout(false);
@@ -1988,6 +1988,8 @@
             this.tabCapacity.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -2010,12 +2012,10 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
