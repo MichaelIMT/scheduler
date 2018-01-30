@@ -35,29 +35,28 @@ namespace scheduler
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
-            Scheduler mainForm = new Scheduler(context);
-            mainForm.Show();
 
-            //if (inputPassword.Text == "" || inputName.Text == "")
-            //{
-            //    MessageBox.Show("Поля повинні бути заповнені!!!");
-            //    return;
-            //}
 
-            //this.IsAuthorised = CheckIfUserExist(inputName.Text, inputPassword.Text);
+            if (inputPassword.Text == "" || inputName.Text == "")
+            {
+                MessageBox.Show("Поля повинні бути заповнені!!!");
+                return;
+            }
 
-            //if (!IsAuthorised)
-            //{
-            //    MessageBox.Show("Введено невірні дані!!!");
-            //}
-            //else
-            //{
-            //    this.Hide();
+            this.IsAuthorised = CheckIfUserExist(inputName.Text, inputPassword.Text);
 
-            //    Scheduler mainForm = new Scheduler(context);
-            //    mainForm.Show();
+            if (!IsAuthorised)
+            {
+                MessageBox.Show("Введено невірні дані!!!");
+            }
+            else
+            {
+                this.Hide();
 
-            //}
+                Scheduler mainForm = new Scheduler(context);
+                mainForm.Show();
+
+            }
         }
 
 

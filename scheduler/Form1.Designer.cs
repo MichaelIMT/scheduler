@@ -502,6 +502,7 @@ namespace scheduler
             this.button10.TabIndex = 0;
             this.button10.Text = "Додати";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // tabGroups
             // 
@@ -617,6 +618,7 @@ namespace scheduler
             this.button15.TabIndex = 0;
             this.button15.Text = "Додати";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // tabLessons
             // 

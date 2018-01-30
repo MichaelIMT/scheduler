@@ -27,6 +27,13 @@ namespace scheduler
             {
                 kafedrasGridView1.Rows.Add(new object[] { k.FullName, k.ShortName });
             }
+
+            var grids = GetAll(this.tabControl1, typeof(DataGridView));
+            foreach (DataGridView c in grids)
+            {
+                c.CellEndEdit  += new System.Windows.Forms.DataGridViewCellEventHandler(this.kafedrasGridView1_CellEndEdit);
+
+            }
         }
 
 
@@ -76,6 +83,8 @@ namespace scheduler
             {
                 c.Rows.Clear();
             }
+
+            ClearIndexes();
 
 
             //kafedras
@@ -204,6 +213,43 @@ namespace scheduler
 
         private void ClearIndexes() {
             this.indexesOfChangedRows = new List<int>();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in kafedrasGridView1.Rows)
+            {
+
+                foreach (int changedIndex in indexesOfChangedRows)
+                {
+                    if (row.Index == changedIndex)
+                    {
+                        context.Specialties.Add(new Specialty { FullName = row.Cells[0].Value.ToString(), ShortName = row.Cells[1].Value.ToString() });
+
+                    }
+                }
+                context.SaveChanges();
+                ClearIndexes();
+
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in kafedrasGridView1.Rows)
+            {
+
+                foreach (int changedIndex in indexesOfChangedRows)
+                {
+                    if (row.Index == changedIndex)
+                    {
+                        context.Groups.Add(new Group { Name = row.Cells[0].Value.ToString(), SpecialtyId = Convert.ToInt32(row.Cells[1].Value),StudentsCount= Convert.ToInt32(row.Cells[2].Value) });
+                    }
+                }
+                context.SaveChanges();
+                ClearIndexes();
+
+            }
         }
     }
 }
