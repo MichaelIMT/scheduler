@@ -26,6 +26,7 @@ namespace scheduler.Models
         public DbSet<Сorps> Сorpses { get; set; }
         public DbSet<MetodDni> MetodDni { get; set; }
 
+        public DbSet<LektorLoad> LektorLoads { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -34,6 +35,11 @@ namespace scheduler.Models
                 .HasRequired<Kafedra>(s => s.kafedra)
                 .WithMany(g => g.Specialties)
                 .HasForeignKey<int>(s => s.KafedraId).WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Subject>()
+              .HasRequired<Group>(s => s.Groups)
+              .WithMany(g => g.Subjects)
+              .HasForeignKey<int>(s => s.GroupId).WillCascadeOnDelete(false);
         }
     }
 }

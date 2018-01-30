@@ -8,7 +8,7 @@ namespace scheduler.Models
 {
     public class Subject
     {
-        public int Id {get;set;}
+        public int Id { get; set; }
         public string FullName { get; set; }
         public string ShortName { get; set; }
 
@@ -19,5 +19,8 @@ namespace scheduler.Models
 
         public int SubjectTypeId { get; set; }
         public SubjectType SubjectType { get; set; }
-    }
+
+        public virtual ICollection<LektorLoad> LektorLoad { get;set;}
+
+}
 }

@@ -21,7 +21,7 @@ namespace scheduler.Models
         public Specialty Specialty { get; set; }
 
         public virtual ICollection<Subject> Subjects { get; set; }
-
+        public virtual ICollection<LektorLoad> LektorLoad { get; set; }
 
     }
 }

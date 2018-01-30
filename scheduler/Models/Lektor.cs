@@ -21,5 +21,7 @@ namespace scheduler.Models
 
         public int KafedraId { get; set; }
         public Kafedra Kafedra { get; set; }
+
+        public virtual ICollection<LektorLoad> LektorLoads { get; set; }
     }
 }

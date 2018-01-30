@@ -43,9 +43,9 @@ namespace scheduler.Extensions
             context.Groups.Add(g2);
             context.Groups.Add(g3);
 
-            Lektor lektor1 = new Lektor { Name = "K", Primitka = "Primitka 1", KafedraId = _kafedras[0].Id  };
-            Lektor lektor2 = new Lektor { Name = "K", Primitka = "Primitka 2", KafedraId = _kafedras[0].Id };
-            Lektor lektor3 = new Lektor { Name = "K", Primitka = "Primitka 3", KafedraId = _kafedras[0].Id };
+            Lektor lektor1 = new Lektor { Name = "Kabak", Primitka = "Primitka 1", KafedraId = _kafedras[0].Id  };
+            Lektor lektor2 = new Lektor { Name = "Kostenko", Primitka = "Primitka 2", KafedraId = _kafedras[0].Id };
+            Lektor lektor3 = new Lektor { Name = "Kolotuha", Primitka = "Primitka 3", KafedraId = _kafedras[0].Id };
 
             context.Lektors.Add(lektor1);
             context.Lektors.Add(lektor2);
@@ -96,6 +96,7 @@ namespace scheduler.Extensions
 
             SubjectType SubjectType1 = new SubjectType {FullName="Лекція",ShortName="л." };
             SubjectType SubjectType2 = new SubjectType { FullName = "Семінар", ShortName = "сем." };
+            SubjectType SubjectType3 = new SubjectType { FullName = "Лабораторна робота", ShortName = "лаб." };
 
             context.SubjectTypes.Add(SubjectType1);
             context.SubjectTypes.Add(SubjectType2);
@@ -138,6 +139,21 @@ namespace scheduler.Extensions
             context.Audiences.Add(Audience3);
             context.Audiences.Add(Audience4);
             context.Audiences.Add(Audience5);
+
+            await context.SaveChangesAsync();
+            // =====================================================//
+            LektorLoad LektorLoad1 = new LektorLoad { SubjectId = Subject1.Id, GroupId = g1.Id, LektorId = lektor1.Id, Lecture = "40/2", Seminar = "20/0" };
+            LektorLoad LektorLoad2 = new LektorLoad { SubjectId = Subject2.Id, GroupId = g2.Id, LektorId = lektor1.Id, Lecture = "40/2",  };
+            LektorLoad LektorLoad3 = new LektorLoad { SubjectId = Subject1.Id, GroupId = g3.Id, LektorId = lektor1.Id, Seminar = "20/0" };
+
+            //LektorLoad LektorLoad1 = new LektorLoad {LektorId = lektor1.Id, Lecture = "40/2", Seminar = "20/0" };
+            //LektorLoad LektorLoad2 = new LektorLoad {LektorId = lektor1.Id, Lecture = "40/2", };
+            //LektorLoad LektorLoad3 = new LektorLoad {LektorId = lektor1.Id, Seminar = "20/0" };
+
+
+            context.LektorLoads.Add(LektorLoad1);
+            context.LektorLoads.Add(LektorLoad2);
+            context.LektorLoads.Add(LektorLoad3);
 
             await context.SaveChangesAsync();
 

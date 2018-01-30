@@ -75,6 +75,7 @@
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Kafedra.cs" />
     <Compile Include="Models\Lektor.cs" />
+    <Compile Include="Models\LektorLoad.cs" />
     <Compile Include="Models\MetodDni.cs" />
     <Compile Include="Models\ShedulerContext.cs" />
     <Compile Include="Models\Specialty.cs" />

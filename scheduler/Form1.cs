@@ -34,6 +34,21 @@ namespace scheduler
                 c.CellEndEdit  += new System.Windows.Forms.DataGridViewCellEventHandler(this.kafedrasGridView1_CellEndEdit);
 
             }
+
+
+            foreach (Lektor l in context.Lektors.ToList()) {
+                comboBox1.Items.Add(l.Name);
+            }
+
+            foreach (LektorLoad load in context.LektorLoads.ToList())
+            {
+                loadLectorGridView10.Rows.Add(new object[] {
+                    load.Subject.FullName, load.Group.Name + " " +load.Group.Code, load.Lecture,load.Seminar,load.Lab
+            });
+            }
+
+           
+
         }
 
 
@@ -250,6 +265,11 @@ namespace scheduler
                 ClearIndexes();
 
             }
+        }
+
+        private void comboBox1_TextChanged(object sender, EventArgs e)
+        {
+            loadLectorGridView10.Rows.Add(new object[] { });
         }
     }
 }

@@ -157,15 +157,9 @@ namespace scheduler
             this.button54 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
-            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loadLectorGridView10 = new System.Windows.Forms.DataGridView();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.button49 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -221,6 +215,12 @@ namespace scheduler
             this.підтримкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проПрограмуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabLists.SuspendLayout();
             this.ControlLists.SuspendLayout();
@@ -257,7 +257,7 @@ namespace scheduler
             this.tabPage3.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadLectorGridView10)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
@@ -1423,11 +1423,11 @@ namespace scheduler
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.comboBox1);
             this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.domainUpDown5);
             this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.domainUpDown4);
-            this.tabPage4.Controls.Add(this.dataGridView10);
+            this.tabPage4.Controls.Add(this.loadLectorGridView10);
             this.tabPage4.Controls.Add(this.groupBox11);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
@@ -1446,14 +1446,6 @@ namespace scheduler
             this.label6.TabIndex = 8;
             this.label6.Text = "Викладач";
             // 
-            // domainUpDown5
-            // 
-            this.domainUpDown5.Location = new System.Drawing.Point(344, 350);
-            this.domainUpDown5.Name = "domainUpDown5";
-            this.domainUpDown5.Size = new System.Drawing.Size(238, 33);
-            this.domainUpDown5.TabIndex = 7;
-            this.domainUpDown5.Text = "Волжанський О.П.";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1471,45 +1463,20 @@ namespace scheduler
             this.domainUpDown4.TabIndex = 5;
             this.domainUpDown4.Text = "каф. хімії";
             // 
-            // dataGridView10
+            // loadLectorGridView10
             // 
-            this.dataGridView10.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.loadLectorGridView10.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.loadLectorGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.loadLectorGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18,
             this.Column22,
             this.Column23,
             this.Column24});
-            this.dataGridView10.Location = new System.Drawing.Point(-4, 51);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.Size = new System.Drawing.Size(784, 288);
-            this.dataGridView10.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "Дисципліна";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "Група";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "Лекція";
-            this.Column22.Name = "Column22";
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "Симінар";
-            this.Column23.Name = "Column23";
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Лаб. робота";
-            this.Column24.Name = "Column24";
+            this.loadLectorGridView10.Location = new System.Drawing.Point(-4, 51);
+            this.loadLectorGridView10.Name = "loadLectorGridView10";
+            this.loadLectorGridView10.Size = new System.Drawing.Size(784, 288);
+            this.loadLectorGridView10.TabIndex = 4;
             // 
             // groupBox11
             // 
@@ -1952,11 +1919,45 @@ namespace scheduler
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(344, 350);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "Дисципліна";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.HeaderText = "Група";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // Column22
+            // 
+            this.Column22.HeaderText = "Лекція";
+            this.Column22.Name = "Column22";
+            // 
+            // Column23
+            // 
+            this.Column23.HeaderText = "Семінар";
+            this.Column23.Name = "Column23";
+            // 
+            // Column24
+            // 
+            this.Column24.HeaderText = "Лаб. робота";
+            this.Column24.Name = "Column24";
+            // 
             // Scheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 477);
+            this.ClientSize = new System.Drawing.Size(768, 530);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
@@ -2004,7 +2005,7 @@ namespace scheduler
             this.groupBox10.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadLectorGridView10)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
@@ -2176,12 +2177,7 @@ namespace scheduler
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button button54;
-        private System.Windows.Forms.DataGridView dataGridView10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
+        private System.Windows.Forms.DataGridView loadLectorGridView10;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.DataGridView dataGridView11;
@@ -2206,7 +2202,6 @@ namespace scheduler
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DomainUpDown domainUpDown3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DomainUpDown domainUpDown5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DomainUpDown domainUpDown4;
         private System.Windows.Forms.Label label7;
@@ -2220,6 +2215,12 @@ namespace scheduler
         private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column29;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
     }
 }
 
