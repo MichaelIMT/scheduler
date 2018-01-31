@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace scheduler
 {
     public partial class Scheduler : Form
@@ -272,6 +273,12 @@ namespace scheduler
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
             loadLectorGridView10.Rows.Add(new object[] { });
+        }
+
+        private void створитиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GenAlgorithm.GenAlgorithm.Run();
+
         }
     }
 }

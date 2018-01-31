@@ -1842,6 +1842,7 @@ namespace scheduler
             this.створитиToolStripMenuItem.Name = "створитиToolStripMenuItem";
             this.створитиToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.створитиToolStripMenuItem.Text = "Створити";
+            this.створитиToolStripMenuItem.Click += new System.EventHandler(this.створитиToolStripMenuItem_Click);
             // 
             // відкритиToolStripMenuItem
             // 

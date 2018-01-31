@@ -155,4 +155,3 @@ D:\Test\scheduler\scheduler\bin\Debug\System.Collections.Immutable.xml
 D:\Test\scheduler\scheduler\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\Test\scheduler\scheduler\bin\Debug\System.Interactive.Async.xml
 D:\Test\scheduler\scheduler\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Test\scheduler\scheduler\obj\Debug\scheduler.csprojResolveAssemblyReference.cache
