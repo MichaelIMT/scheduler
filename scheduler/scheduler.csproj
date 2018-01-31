@@ -121,6 +121,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenAlgorithm\GenAlgorithm.cs" />
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
